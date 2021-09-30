@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
-import { useAppSelector, useAppDispatch } from '../../app/hooks';
+import { useAppSelector, useAppDispatch } from '../redux/hooks';
 import {
   decrement,
   increment,
   incrementByAmount,
   incrementAsync,
   incrementIfOdd,
-  selectCount,
-} from './counterSlice';
+  selectCount
+} from '../redux/counter/counterSlice';
 import styles from './Counter.module.css';
 
 export function Counter() {
